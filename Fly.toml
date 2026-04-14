@@ -1,0 +1,16 @@
+app = "poly-proxy"
+primary_region = "iad"
+
+[build]
+
+[[services]]
+  internal_port = 8888
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 8888
+
+[[vm]]
+  memory = "256mb"
+  cpu_kind = "shared"
+  cpus = 1
